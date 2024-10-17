@@ -154,16 +154,7 @@ class Gutenberg_Counter_Widget {
         ob_start(); 
         ?>
         <div class="counter-widget">
-        <div class="counter-header">
-            <<?php echo esc_html($attributes['headerTag']); ?>>
-                <?php echo esc_html($attributes['headerText']); ?>
-            </<?php echo esc_html($attributes['headerTag']); ?>>
-        </div>
-        <div class="counter-subheader">
-            <div>
-                <?php echo esc_html($attributes['subheaderText']); ?>
-            </div>
-        </div>
+        
         <div class="counter-icon">
             <img src="<?php echo esc_url($attributes['iconUrl']); ?>" alt="<?php echo esc_attr($attributes['iconAlt']); ?>" style="width: <?php echo intval($attributes['iconSize']); ?>px;">
         </div>
@@ -180,6 +171,16 @@ class Gutenberg_Counter_Widget {
                 <div>
                     <?php echo esc_html($attributes['suffix']); ?>
                 </div>
+            </div>
+        </div>
+        <div class="counter-header">
+            <<?php echo esc_html($attributes['headerTag']); ?>>
+                <?php echo esc_html($attributes['headerText']); ?>
+            </<?php echo esc_html($attributes['headerTag']); ?>>
+        </div>
+        <div class="counter-subheader">
+            <div>
+                <?php echo esc_html($attributes['subheaderText']); ?>
             </div>
         </div>
         <script>

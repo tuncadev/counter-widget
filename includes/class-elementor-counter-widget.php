@@ -638,13 +638,7 @@ protected function render() {
     ?>
     <div class="screen">
 
-        <<?php echo esc_html($header_tag); ?> class="counter-header">
-            <?=$header_text; ?>
-        </<?php echo esc_html($header_tag); ?>>
-
-        <<?php echo esc_html($subheader_tag); ?> class="counter-subheader">
-            <?=$subheader_text;?>
-        </<?php echo esc_html($subheader_tag); ?>>
+        
 
         <?php if (!empty($icon)) : ?>
             <div class="counter-icon centered" style="color: <?=$icon_color;?>; font-size: <?=$icon_size;?>px;">
@@ -662,6 +656,15 @@ protected function render() {
             <div class="counter-suffix" style="vertical-align: <?=$alignment;?>;">
                 <?php echo esc_html($suffix); ?>
             </div>
+        </div>
+        <div class="headers">
+            <<?php echo esc_html($header_tag); ?> class="counter-header">
+                <?=$header_text; ?>
+            </<?php echo esc_html($header_tag); ?>>
+
+            <<?php echo esc_html($subheader_tag); ?> class="counter-subheader">
+                <?=$subheader_text;?>
+            </<?php echo esc_html($subheader_tag); ?>>
         </div>
     </div>
                 

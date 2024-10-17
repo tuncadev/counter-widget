@@ -47,3 +47,8 @@
         font-size: 25px;
     }
 }
+.headers {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
