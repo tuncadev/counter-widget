@@ -1,0 +1,49 @@
+.counter-widget {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.counter-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.counter-content {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-prefix,
+.counter-suffix {
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.odometer {
+    display: inline-block;
+    font-size: inherit;
+}
+.counter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+/* Responsive styling for smaller devices */
+@media (max-width: 600px) {
+    .counter-content {
+        font-size: 30px;
+    }
+
+    .counter-prefix,
+    .counter-suffix {
+        font-size: 16px;
+    }
+
+    .counter-icon {
+        font-size: 25px;
+    }
+}
